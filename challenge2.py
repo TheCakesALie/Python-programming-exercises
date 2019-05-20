@@ -1,0 +1,26 @@
+# Question 2
+# Level 1
+
+# Question:
+# Write a program which can compute the factorial of a given numbers.
+# The results should be printed in a comma-separated sequence on a single line.
+# Suppose the following input is supplied to the program:
+# 8
+# Then, the output should be:
+# 40320
+
+number = int(input("What number? "))
+total = number
+for i in range((number-1), 1, -1):
+    total *= i
+
+print('Total = ' + str(total))
+
+#other solution
+def fact(x):
+    if x == 0:
+        return 1
+    return x * fact(x - 1)
+
+x=int(input())
+print (fact(x))
